@@ -1,0 +1,51 @@
+<div class="col-xs-12 col-sm-6 full-height centered">
+	<div class="row w-100">
+		<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+			<div class="text-center mb-4">
+				<img src="/assets/img/login.png" height="80" alt="">
+			</div>
+			<form name="login_from" ng-submit="login_from.$valid && LoginCtrl.login()" novalidate>
+
+				<div class="error text-center" ng-if="LoginCtrl.serverErrors" data-ng-cloak>
+					<span ng-repeat="error in LoginCtrl.serverErrors.non_field_errors" class="error">{{error}}</span>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Username</label>
+					<input type="text" name="email" class="form-control" id="email" placeholder="Username" ng-model="LoginCtrl.username" required>
+					<!--				error dipplay -->
+					<div ng-messages="login_from.username.$error" ng-show='login_from.$submitted || login_from.email.$dirty'>
+						<div ng-message="required" class="error">This is a required field.</div>
+					</div>
+					<div class="error" ng-if="LoginCtrl.serverErrors" data-ng-cloak>
+						<span ng-repeat="error in LoginCtrl.serverErrors.username" class="help-block error">{{error}}</span>
+					</div>
+					<!--				end error display -->
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" name="password" class="form-control" id="password" placeholder="Password" ng-model="LoginCtrl.password"
+					 required>
+					<!--				error dipplay-->
+					<div ng-messages="login_from.password.$error" ng-show='login_from.$submitted || login_from.password.$dirty'>
+						<div ng-message="required" class="error">This is a required field.</div>
+					</div>
+					<div class="error" ng-if="LoginCtrl.serverErrors" data-ng-cloak>
+						<span ng-repeat="error in LoginCtrl.serverErrors.password" class="help-block error">{{error}}</span>
+					</div>
+					<!--				end error display -->
+				</div>
+				<div class="text-center pt-1">
+					<button type="submit" class="btn btn-primary btn-block">Login</button>
+				</div>
+				<div class="text-right pt-1">
+					<a ui-sref="app.public.forgot">Forgot Password?</a>
+				</div>
+				<!-- <p class="text-center"> - OR - </p>
+				<div class="text-center pt-1">
+					<a ui-sref="app.public.register" class="btn btn-primary btn-block">Register</a>
+				</div> -->
+			</form>
+		</div>
+	</div>
+</div>

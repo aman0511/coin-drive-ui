@@ -1,0 +1,262 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/*** bootstrap css overwrite ***/
+
+.error {
+  color: red;
+}
+.form-control {
+  border-radius: 2px; 
+}
+.form-control:focus {
+  border-color: #00C65A;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0,197,155,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0,197,155,.6);
+}
+.btn {
+  border-radius: 2px;
+}
+.btn-primary {
+  background-color: #00C65A;
+  border-color: #00C65A;
+}
+.btn-primary:hover {
+  background-color: #00ab4e;
+  border-color: #00ab4e;
+}
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary,
+.btn-primary.focus, .btn-primary:focus,
+.btn-primary:active:focus {
+  background-color: #00ab4e;
+  border-color: #00ab4e;
+}
+label {
+  margin-bottom: 2px;
+  font-size: 12px;
+  }
+.text-success {
+  color: #00C65A;
+}
+.table th {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  line-height: 1.1;
+  padding: 7px; 
+}
+/*** spacing css ***/
+.pa-0 {
+  padding: 0;
+}
+.pl-30 {
+  padding-left: 30px !important;
+}
+.pl-0 {
+  padding-left: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
+.ptb-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.ma-0 {
+  margin:0;
+}
+.mtb-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mtb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pt-1 {
+ padding-top: 1rem;
+}
+.ma-1 {
+  margin: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+
+/*** utilities css ***/
+.w-100 {
+  width: 100%;
+}
+.full-height {
+  height: 100vh;
+}
+.primary-bg {
+  background: #00C59B;
+}
+.gray-bg {
+  background-color: #f8f8f8;
+}
+.white-bg {
+  background-color: #fff;
+}
+.z-index-10 {
+  z-index: 10;
+}
+.centered {
+  -webkit-box-align: center!important;
+  -webkit-align-items: center!important;
+  -ms-flex-align: center!important;
+  align-items: center!important;
+  display: flex;
+}
+.sidenav {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0 0 8px #ccc;
+}
+.sidenav span.caret {
+  border-top: 6px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  float: right;
+  margin-top: 17px;
+}
+.sidenav .nav li a {
+  padding: 8px;
+  color: #616060;
+  line-height: 40px;
+  font-size: 14px;
+  border-left: 5px solid transparent;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.sidenav .nav li ul li a {
+  line-height: 24px;
+}
+.sidenav .icon {
+  display: inline-block;
+  width: 35px;
+}
+.sidenav .nav li a:hover,
+.sidenav .nav li a:focus {
+  border-left: 5px solid #6cc85c;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.content {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0 25px; 
+  background-color: #f8f8f8;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+.user-dropdown:hover {
+  text-decoration: none;
+}
+.user-wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #f6f6f6;
+}
+.user-img {
+  border: 2px solid #e2e2e2;
+  margin-right: 5px;
+}
+.user-name {
+  color: #626262;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.heading {
+  margin-top: 10px;
+  font-weight: 600;
+}
+.search-box {
+  border-radius: 20px;
+  padding-right: 36px;
+}
+.search-box-icon {
+  top:20px;
+  right: 20px;
+}
+.logo-img {
+  margin-left: 65px;
+}
+.pointer {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.angucomplete-holder {
+  position: relative;
+}
+.angucomplete-dropdown {
+  max-height: 90px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  line-height: 1.7;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+}
+.angucomplete-searching,
+.angucomplete-title {
+  padding: 6px 12px;
+}
+.angucomplete-title:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+/* scroll bar overrite */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.breadcrumb {
+  padding: 0;
+  background: transparent;
+  margin: 0;
+}
+.breadcrumb>.active {
+  color: #000;
+}
+.width-sm {
+  min-width: 75px; 
+}

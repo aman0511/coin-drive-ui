@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoinDrive</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css"></link>
+    <link rel="stylesheet" href="bower_components/ngToast/dist/ngToast.min.css">
+    <link rel="stylesheet" href="/dist/css/deliveryapp.min.css" />
+    <base href="/">
+</head>
+
+<body ng-app="app">
+    <toast></toast>
+    <div class="container-fluid pa-0" id="embx-app">
+        <div ui-view></div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/jQuery/dist/jquery.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="/bower_components/restangular/dist/restangular.min.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.js"></script>
+    <script src="/bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/ngToast/dist/ngToast.min.js"></script>
+    <script src="bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js"></script>
+    <script src="/dist/js/deliveryapp.js"></script>
+    
+    <script>   
+	// Make sure fcWidget.init is included before setting these values    
+	// To set unique user id in your system when it is available   
+	window.fcWidget.setExternalId("dev");    
+	// To set user name   
+	window.fcWidget.user.setFirstName("Delivery_Dashboard");    
+	// To set user email   
+	window.fcWidget.user.setEmail("no_reply@1bridge.one");    
+    </script>
+</body>
+
+</html>

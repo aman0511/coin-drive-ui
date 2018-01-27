@@ -1,0 +1,64 @@
+<div ng-init="OrderCtrl.getOrderDetails()">
+  <div class="row">
+    <div class="col-xs-12 mtb-10">
+      <h3 class="heading">Order Details</h3>
+    </div>
+    <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Order ID</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.order_id}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Product Name</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.product_name}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Product Price</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.product_price}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Product Description</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.product_description}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Quantity</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.quantity}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Shipping Charge</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.shipping_charge}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Pick Up Address</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.pick_up_address}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Seller Name</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.seller_name}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Customer Address</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.customer_address}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Customer Name</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.customer_name}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Customer Contact No.</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.customer_contact_no}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">No. of Shippmnets</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.no_of_shippmnets}}</strong></p>
+            </div>
+            <div class="row mb-1">
+              <p class="col-xs-12 col-sm-3">Status</p>
+              <p class="col-xs-12 col-sm-9"><strong>{{OrderCtrl.order.status | orderStatusFilter}}</strong></p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row gray-bg">
+    <div class="col-xs-12 col-sm-2 pa-0 z-index-10">
+      <nav class="sidenav">
+        <div class="text-center user-wrap">
+          <img src="/assets/img/user.png" alt="" class="img-circle user-img" height="80" />
+          <h3 class="user-name">{{user.first_name}}</h3>
+        </div>
+        <ul class="nav">
+          <li>
+            <a ui-sref="app.dashboard.approve-inventory" ng-click="isCollapsed = !isCollapsed">
+              <span class="icon">
+                <img src="/assets/img/new.png" height="20">
+              </span>Confirm Inventory
+              <span class="caret"></span>
+            </a>
+          </li>
+          <li>
+            <a ui-sref="app.dashboard.pending-inventory" ng-click="isCollapsed = !isCollapsed">
+              <span class="icon">
+                <img src="/assets/img/new.png" height="20">
+              </span>Pending Inventory
+              <span class="caret"></span>
+            </a>
+          </li>
+          <li>
+            <a href ng-click="">
+              <span class="icon">
+                <img src="/assets/img/logout.png" height="20">
+              </span>Log Out</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-12 col-sm-10 content">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>

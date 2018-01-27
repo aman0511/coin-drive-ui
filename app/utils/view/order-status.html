@@ -1,0 +1,6 @@
+<div ng-init="getOrderStatus()">
+  <label>Status</label>
+  <select class="form-control" ng-model="ngModel" ng-options="k as v for (k, v) in status">
+    <option value="" disabled>Please Select Status</option>
+  </select>
+</div>

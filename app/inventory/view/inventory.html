@@ -1,0 +1,46 @@
+<div class="row mtb-10">
+    <div class="col-sm-4">
+        <h3 class="heading"><div ncy-breadcrumb></div></h3>
+    </div>
+    <div class="col-sm-8 text-right">
+        <a ui-sref="app.dashboard.new-inventory" class="btn btn-primary" href="#" role="button">Add New Inventory</a>
+    </div>
+</div>
+
+<div class="row white-bg mt-15 ptb-5" ng-init="InventoryCtrl.inventoryList()">
+    <div class="col-xs-12">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Vendor</th>
+                    <th>MRP</th>
+                    <th>Batch Num</th>
+                    <th>Batch Date</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in InventoryCtrl.inventorys.results">
+                    
+                    <td title="View Order Detail"><a ui-sref="app.dashboard.order-detail({'id': product.id})"> {{product.id}}</a></td>
+                    <td>
+                        {{product.name}}
+                    </td>
+                    <td>{{product.vendor}}</td>
+                    <td>{{product.mrp}}</td>
+                    <td>{{product.batch_num}}</td>
+                    <td>{{product.batch_date}}</td>
+                    <td>{{product.quantity}}</td>
+                    <td>{{product.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="text-center">
+    <ul uib-pagination total-items="OrderCtrl.orders.pageInfo.totalResults" ng-model="OrderCtrl.current_page" max-size="10" class="pagination-sm"
+        boundary-links="true" num-pages="10" ng-change="OrderCtrl.orderList()"></ul>
+</div>
